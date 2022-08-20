@@ -1,0 +1,25 @@
+<?php
+/**
+ * The template for displaying the footer
+ * @subpackage Geschaft Business
+ * @since 1.0
+ */
+
+?>
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="copyright">
+			<div class="container footer-content">
+				<?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
+				<?php get_template_part( 'template-parts/footer/site', 'info' ); ?>
+				<?php if( get_theme_mod( 'geschaft_business_scroll_enable',true) != '') { ?>
+					<div class="scroll-top">
+						<button type=button id="geschaft-business-scroll-to-top" class="scrollup"><i class="fas fa-chevron-up"></i></button>
+					</div>
+				<?php }?>
+			</div>
+		</div>
+	</footer>
+<?php wp_footer(); ?>
+
+</body>
+</html>
